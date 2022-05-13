@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pharmacological_groups",
+  "info": {
+    "name": "Pharmacological Groups",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

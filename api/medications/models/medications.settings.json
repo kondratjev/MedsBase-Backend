@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medications",
+  "info": {
+    "name": "Medications",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "pharmacologicalGroups": {
+      "collection": "pharmacological-groups"
+    },
+    "activeSubstance": {
+      "model": "active-substance"
+    },
+    "synonyms": {
+      "collection": "synonyms"
+    },
+    "sideEffects": {
+      "collection": "side-effects"
+    },
+    "researchList": {
+      "collection": "research-list"
+    },
+    "contraindications": {
+      "collection": "contraindications"
+    }
+  }
+}

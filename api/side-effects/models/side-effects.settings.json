@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "side_effects",
+  "info": {
+    "name": "Side Effects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "impact": {
+      "type": "enumeration",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    }
+  }
+}

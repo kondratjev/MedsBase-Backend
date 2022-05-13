@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/side-effects",
+      "handler": "side-effects.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/side-effects/count",
+      "handler": "side-effects.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/side-effects/:id",
+      "handler": "side-effects.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/side-effects",
+      "handler": "side-effects.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/side-effects/:id",
+      "handler": "side-effects.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/side-effects/:id",
+      "handler": "side-effects.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

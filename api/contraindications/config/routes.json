@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contraindications",
+      "handler": "contraindications.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contraindications/count",
+      "handler": "contraindications.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contraindications/:id",
+      "handler": "contraindications.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contraindications",
+      "handler": "contraindications.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contraindications/:id",
+      "handler": "contraindications.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contraindications/:id",
+      "handler": "contraindications.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

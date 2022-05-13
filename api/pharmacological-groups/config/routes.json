@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pharmacological-groups",
+      "handler": "pharmacological-groups.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pharmacological-groups/count",
+      "handler": "pharmacological-groups.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pharmacological-groups/:id",
+      "handler": "pharmacological-groups.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pharmacological-groups",
+      "handler": "pharmacological-groups.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pharmacological-groups/:id",
+      "handler": "pharmacological-groups.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pharmacological-groups/:id",
+      "handler": "pharmacological-groups.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

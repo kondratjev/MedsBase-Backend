@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "research_lists",
+  "info": {
+    "name": "Research List",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isConfirmed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "organization": {
+      "type": "enumeration",
+      "enum": [
+        "Pubmed",
+        "FDA",
+        "CochraneReviews",
+        "RXlist",
+        "WHO",
+        "FK"
+      ],
+      "required": true
+    },
+    "result": {
+      "type": "text",
+      "required": true
+    },
+    "links": {
+      "type": "json"
+    }
+  }
+}
